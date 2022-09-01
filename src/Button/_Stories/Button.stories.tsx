@@ -6,7 +6,7 @@ import MDX from './Button.main.mdx';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
   parameters: {
     docs: { page: MDX },
