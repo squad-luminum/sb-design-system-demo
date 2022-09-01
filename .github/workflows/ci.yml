@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+        # cache: 'yarn'
+
+    - name: Install
+      run: npm ci
+
+    - name: Build
+      run: npm run ci
+
+    - name: Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-storybook
+        path: build-storybook
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      with:
+        folder: build-storybook
+        single-commit: true
