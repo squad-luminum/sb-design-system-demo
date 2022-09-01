@@ -1,5 +1,5 @@
 import { TabsState } from '@storybook/components';
-import { Stories } from '@storybook/addon-docs';
+import { ArgsTable, Stories } from '@storybook/addon-docs';
 
 import Button from '../Button';
 import MDXOverview from './Button.overview.mdx';
@@ -9,14 +9,16 @@ import MDXOverview from './Button.overview.mdx';
 
 # Button
 
+```typescript
+import { Button } from '@company/button';
+```
+
 <TabsState>
   <div id='Overview' title='Overview'>
     <MDXOverview />
   </div>
   <div id='Properties' title='Properties'>
-
-Properties Content
-
+    <ArgsTable />
   </div>
   <div id='Design' title='Design'>
 
