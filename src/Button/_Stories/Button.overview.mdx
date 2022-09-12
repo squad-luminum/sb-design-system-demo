@@ -1,1 +1,32 @@
-Overview Content
+import { Canvas, Story } from '@storybook/addon-docs';
+
+Buttons trigger interactions throughout the experience.
+Use them for things such as confirming or submitting forms, cancelling actions, opening or closing dialogs, or moving forwards or backwards in workflows.
+
+Do not use them for navigational links; instead, use a [Link component]().
+
+<Canvas>
+  <Story id="components-button--secondary" />
+</Canvas>
+
+## Variations
+
+There are several variations of the Button used in different designs.
+
+Add the `primary` attribute to use the primary color from theming.
+This should be used for the primary action on a screen, such as submitting a form.
+
+<Canvas>
+  <Story id="components-button--primary" />
+</Canvas>
+
+Add the `size="small"` attribute to use a smaller version of the button.
+This should be used inline alongside text content.
+
+<Canvas>
+  <Story id="components-button--small" />
+</Canvas>
+
+## Accessibility
+
+Buttons should always participate in tab ordering for keyboard users.

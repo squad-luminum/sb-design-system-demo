@@ -1,3 +1,76 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+import { Palettes, SemanticLightActive, SemanticLightContainers, SemanticLightContent } from './tokens';
 
 <Meta title="Design/Colors" />
+
+## Semantic Palette
+
+These are the colors used most often throughout the product.
+
+### Active
+
+<ColorPalette>
+  <ColorItem
+    title="Active"
+    subtitle=""
+    colors={SemanticLightActive}
+  />
+  <ColorItem
+    title="Containers"
+    subtitle=""
+    colors={SemanticLightContainers}
+  />
+  <ColorItem
+    title="Content"
+    subtitle=""
+    colors={SemanticLightContent}
+  />
+</ColorPalette>
+
+## Base Colors
+
+Semantic palettes are built from this universe.
+Not all shades from this universe will be used in the product.
+
+<ColorPalette>
+  <ColorItem
+    title="steel"
+    subtitle=""
+    colors={Palettes.steel}
+  />
+  <ColorItem
+    title="red"
+    subtitle=""
+    colors={Palettes.red}
+  />
+  <ColorItem
+    title="blue"
+    subtitle=""
+    colors={Palettes.blue}
+  />
+  <ColorItem
+    title="green"
+    subtitle=""
+    colors={Palettes.green}
+  />
+  <ColorItem
+    title="teal"
+    subtitle=""
+    colors={Palettes.teal}
+  />
+  <ColorItem
+    title="yellow"
+    subtitle=""
+    colors={Palettes.yellow}
+  />
+  <ColorItem
+    title="orange"
+    subtitle=""
+    colors={Palettes.orange}
+  />
+  <ColorItem
+    title="purple"
+    subtitle=""
+    colors={Palettes.purple}
+  />
+</ColorPalette>
