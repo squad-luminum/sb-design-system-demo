@@ -31,7 +31,7 @@
     "transform": "npm run transform:luminumLight && npm run transform:luminumDark && npm run transform:blueStarLight && npm run transform:toCSS",
     "transform:luminumLight": "token-transformer ./tokens/figma-tokens.json ./dist/luminumLight.tokens.json global,light --resolveReferences=false",
     "transform:luminumDark": "token-transformer ./tokens/figma-tokens.json ./dist/luminumDark.tokens.json global,dark --resolveReferences=false",
-    "transform:blueStarLight": "token-transformer ./tokens/figma-tokens.json ./dist/blueStarLight.tokens.json bluestar-global,blue-star-light --resolveReferences=false",
+    "transform:blueStarLight": "token-transformer ./tokens/figma-tokens.json ./dist/blueStarLight.tokens.json global,bluestar-global,bluestar-light --resolveReferences=false",
     "transform:toCSS": "ts-node --project ./tokens/tsconfig.json ./tokens/transformTokens.ts"
   },
   "eslintConfig": {
