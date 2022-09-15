@@ -1,7 +1,7 @@
 import StyleDictionary from 'style-dictionary';
 import { paramCase } from 'change-case';
 
-const themes = [`luminumLight`, `luminumDark`, `blueStarLight`];
+const themes = [`luminum-light`, `luminum-dark`, `bluestar-light`];
 
 StyleDictionary.registerTransform({
     name: 'betterKebab',
