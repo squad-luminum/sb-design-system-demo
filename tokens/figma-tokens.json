@@ -208,15 +208,37 @@
   "dark": {
     "color": {
       "background": {
-        "value": "{color.neutral.50}",
+        "value": "{color.neutral.100}",
         "type": "color"
       },
       "button-primary": {
-        "value": "{color.green.90}",
+        "value": "{color.green.110}",
         "type": "color"
       },
       "link-primary": {
-        "value": "{color.blue.110}",
+        "value": "{color.blue.40}",
+        "type": "color"
+      }
+    }
+  },
+  "bluestar-global": {
+    "color": {
+      "HEX_477FBA": {
+        "value": "#477FBA",
+        "type": "color",
+        "description": "Active-Primary"
+      },
+      "HEX_3B93EE": {
+        "value": "#3B93EE",
+        "type": "color",
+        "description": "Active-Hover"
+      },
+      "active-primary": {
+        "value": "{color.HEX_477FBA}",
+        "type": "color"
+      },
+      "active-hover": {
+        "value": "{color.HEX_3B93EE}",
         "type": "color"
       }
     }
@@ -228,19 +250,19 @@
         "type": "color"
       },
       "button-primary": {
-        "value": "{color.green.90}",
+        "value": "{color.active-primary}",
         "type": "color"
       },
       "link-primary": {
-        "value": "{color.blue.110}",
+        "value": "{color.active-hover}",
         "type": "color"
       }
     }
   },
   "bluestar-adaptor": {
-    "colors": {
-      "hex_477FBA": {
-        "value": "{colors.blue.110}",
+    "color": {
+      "HEX_477FBA": {
+        "value": "{color.blue.110}",
         "type": "color"
       }
     }
@@ -251,6 +273,7 @@
       "global",
       "light",
       "dark",
+      "bluestar-global",
       "bluestar-light",
       "bluestar-adaptor"
     ]
