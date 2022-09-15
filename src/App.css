@@ -1,4 +1,6 @@
-@import url('./styles/luminum-light.css');
+@import url('./styles/luminum-light.theme.css');
+@import url('./styles/luminum-dark.theme.css');
+@import url('./styles/bluestar-light.theme.css');
 
 .App {
   text-align: center;

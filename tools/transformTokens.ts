@@ -22,12 +22,13 @@ themes.forEach(theme => {
         transforms: ["betterKebab"],
         buildPath: `src/styles/`,
         files: [{
-          "destination": `${theme}.css`,
+          "destination": `${theme}.theme.css`,
           "format": "css/variables"
         }],
         options : {
-          "showFileHeader": false,
-          "outputReferences": true
+          selector: `.theme-${theme}`,
+          showFileHeader: false,
+          outputReferences: true
         }
       }
     }

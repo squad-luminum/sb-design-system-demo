@@ -4,7 +4,7 @@ import { Button } from './Button/Button';
 
 function App() {
   return (
-    <div>
+    <div className="theme-luminum-light">
       <Button label="Test Button" primary/>
     </div>
   );

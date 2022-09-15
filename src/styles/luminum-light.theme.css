@@ -1,4 +1,4 @@
-:root {
+.theme-luminum-light {
   --color-green-150: #114136;
   --color-green-140: #155144;
   --color-green-130: #1D725F;
@@ -44,7 +44,7 @@
   --color-blue-30: #DCEFFA;
   --color-blue-20: #E9F5FC;
   --color-blue-10: #f6fbfeff;
-  --color-link-primary: var(--color-blue-40);
-  --color-button-primary: var(--color-green-130);
-  --color-background: var(--color-neutral-100);
+  --color-link-primary: var(--color-blue-110);
+  --color-button-primary: var(--color-green-90);
+  --color-background: var(--color-neutral-50);
 }
