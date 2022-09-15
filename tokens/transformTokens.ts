@@ -1,6 +1,7 @@
-const StyleDictionary = require('style-dictionary')
-const baseConfig = require('./style-dictionary-config.json')
+import StyleDictionary from 'style-dictionary';
+import { paramCase } from 'change-case';
 
+const baseConfig = require('./style-dictionary-config.json')
 // StyleDictionary.registerTransform({
 //   name: 'size/px',
 //   type: 'value',
@@ -38,6 +39,21 @@ const baseConfig = require('./style-dictionary-config.json')
 //     return ['dimension', 'string', 'number', 'color'].includes(token.type)
 //   }
 // })
+
+// 'name/cti/kebab': {
+//     type: 'name',
+
+//   },
+
+StyleDictionary.registerTransform({
+    name: 'betterKebab',
+    type: 'name',
+         transformer: function(token, options) {
+       return paramCase([options!.prefix].concat(token.path).join(' '));
+     }
+})
+
+
 
 const StyleDictionaryExtended = StyleDictionary.extend(baseConfig)
 

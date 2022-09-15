@@ -1,9 +1,10 @@
 {
-    "source": ["dist/style-dictionary-tokens.json"],
+    "source": ["dist/*.tokens.json"],
     "platforms": {
       "css": {
         "transformGroup": "css",
         "buildPath": "dist/css/",
+        "transforms": ["betterKebab"],
         "files": [{
           "destination": "_variables.css",
           "format": "css/variables",
