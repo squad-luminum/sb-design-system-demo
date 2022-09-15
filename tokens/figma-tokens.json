@@ -202,51 +202,5 @@
         "type": "color"
       }
     }
-  },
-  "semantic-dark": {
-    "button": {
-      "primary": {
-        "value": "{colors.green.120}",
-        "type": "color"
-      }
-    },
-    "card": {
-      "background": {
-        "value": "{colors.neutral.80}",
-        "type": "color"
-      }
-    }
-  },
-  "BlueStar": {
-    "colors": {
-      "hex_477FBA": {
-        "value": "#477FBA",
-        "type": "color"
-      }
-    },
-    "button": {
-      "primary": {
-        "value": "{colors.hex_477FBA}",
-        "type": "color"
-      }
-    }
-  },
-  "BlueStarMap": {
-    "colors": {
-      "hex_477FBA": {
-        "value": "{colors.blue.110}",
-        "type": "color"
-      }
-    }
-  },
-  "$themes": [],
-  "$metadata": {
-    "tokenSetOrder": [
-      "global",
-      "semantic",
-      "semantic-dark",
-      "BlueStar",
-      "BlueStarMap"
-    ]
   }
 }
