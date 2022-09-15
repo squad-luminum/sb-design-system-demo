@@ -1,6 +1,6 @@
 {
   "global": {
-    "colors": {
+    "color": {
       "blue": {
         "10": {
           "value": "#f6fbfeff",
@@ -189,18 +189,47 @@
       }
     }
   },
-  "semantic": {
-    "button": {
-      "primary": {
-        "value": "{colors.green.90}",
-        "type": "color"
-      }
-    },
-    "card": {
+  "light": {
+    "color": {
       "background": {
-        "value": "{colors.neutral.60}",
+        "value": "{color.neutral.50}",
+        "type": "color"
+      },
+      "button-primary": {
+        "value": "{color.green.90}",
+        "type": "color"
+      },
+      "link-primary": {
+        "value": "{color.blue.110}",
         "type": "color"
       }
     }
+  },
+  "dark": {},
+  "bluestar-light": {
+    "colors": {
+      "hex_477FBA": {
+        "value": "#477FBA",
+        "type": "color"
+      }
+    }
+  },
+  "bluestar-adaptor": {
+    "colors": {
+      "hex_477FBA": {
+        "value": "{colors.blue.110}",
+        "type": "color"
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global",
+      "light",
+      "dark",
+      "bluestar-light",
+      "bluestar-adaptor"
+    ]
   }
 }
