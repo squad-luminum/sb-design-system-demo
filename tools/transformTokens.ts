@@ -15,12 +15,12 @@ StyleDictionary.registerTransform({
 
 themes.forEach(theme => {
   StyleDictionary.extend({
-    source: [`dist/${theme}.tokens.json`],
+    source: [`.tmp/${theme}.tokens.json`],
     platforms: {
       "web": {
         transformGroup: "web",
         transforms: ["betterKebab"],
-        buildPath: `dist/css/`,
+        buildPath: `src/styles/`,
         files: [{
           "destination": `${theme}.css`,
           "format": "css/variables"
