@@ -28,7 +28,7 @@
     "build-storybook": "storybook build -s public -o build-storybook",
     "ci": "npm run build-storybook",
     "transform": "npm run convertToStyleDictionary && npm run transformTokens",
-    "convertToStyleDictionary": "token-transformer ./tokens/figma-tokens.json ./dist/style-dictionary-tokens.json --resolveReferences=false",
+    "convertToStyleDictionary": "token-transformer ./tokens/figma-tokens.json ./dist/style-dictionary-tokens.json global,light --resolveReferences=false",
     "transformTokens": "ts-node ./tokens/transformTokens.ts"
   },
   "eslintConfig": {
