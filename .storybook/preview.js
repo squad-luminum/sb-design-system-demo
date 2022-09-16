@@ -19,3 +19,11 @@ export const parameters = {
     ],
   },
 }
+
+export const decorators = [
+  (Story) => (
+    <div class="theme-luminum-light">
+        <Story />
+    </div>
+  )
+]

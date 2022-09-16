@@ -27,6 +27,7 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006 -s public",
     "build-storybook": "storybook build -s public -o build-storybook",
+    "build-storybook-docs": "storybook build -s public -o build-storybook-docs --docs",
     "ci": "npm run build-storybook",
     "transform": "run-s transform:*",
     "transform:luminumLight": "token-transformer ./tokens/figma-tokens.json ./.tmp/luminum-light.tokens.json global,light --resolveReferences=false",
