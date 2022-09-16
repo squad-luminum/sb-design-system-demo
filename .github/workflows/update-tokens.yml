@@ -1,0 +1,36 @@
+name: Update Tokens
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'tokens/figma-tokens.json'
+  workflow_dispatch:
+
+jobs:
+  update_tokens:
+    name: Update Tokens
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+        # cache: 'yarn'
+
+    - name: Install
+      run: npm ci
+
+    - name: Build
+      run: npm run transform
+    
+    - name: Commit
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        message: 'feat: update css tokens from Figma'
