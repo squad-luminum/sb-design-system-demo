@@ -45,6 +45,6 @@
   --color-blue-20: #E9F5FC;
   --color-blue-10: #f6fbfeff;
   --color-link-primary: var(--color-blue-110);
-  --color-button-primary: var(--color-green-90);
+  --color-button-primary: var(--color-green-30);
   --color-background: var(--color-neutral-50);
 }
