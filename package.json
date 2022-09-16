@@ -11,6 +11,7 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "change-case": "4.1.2",
+    "nearest-color": "0.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -30,10 +31,12 @@
     "build-storybook-docs": "storybook build -s public -o build-storybook-docs --docs",
     "ci": "npm run build-storybook",
     "transform": "run-s transform:*",
+    "transform:global": "token-transformer ./tokens/figma-tokens.json ./.tmp/global.tokens.json global --resolveReferences=false",
     "transform:luminumLight": "token-transformer ./tokens/figma-tokens.json ./.tmp/luminum-light.tokens.json global,light --resolveReferences=false",
     "transform:luminumDark": "token-transformer ./tokens/figma-tokens.json ./.tmp/luminum-dark.tokens.json global,dark --resolveReferences=false",
     "transform:blueStarLight": "token-transformer ./tokens/figma-tokens.json ./.tmp/bluestar-light.tokens.json global,bluestar-global,bluestar-light --resolveReferences=false",
-    "transform:toCSS": "ts-node --project ./tools/tsconfig.json ./tools/transformTokens.ts"
+    "transform:toCSS": "ts-node --project ./tools/tsconfig.json ./tools/transformTokens.ts",
+    "runColorMap": "node existingColors.js"
   },
   "eslintConfig": {
     "extends": [

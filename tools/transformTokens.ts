@@ -1,7 +1,7 @@
 import StyleDictionary from 'style-dictionary';
 import { paramCase } from 'change-case';
 
-const themes = [`luminum-light`, `luminum-dark`, `bluestar-light`];
+const themes = [`global`, `luminum-light`, `luminum-dark`, `bluestar-light`];
 
 StyleDictionary.registerTransform({
     name: 'betterKebab',
@@ -30,7 +30,18 @@ themes.forEach(theme => {
           showFileHeader: false,
           outputReferences: true
         }
-      }
+      },
+      json: {
+        transformGroup: "js",
+        transforms: ["betterKebab"],
+        buildPath: `src/styles/`,
+        files: [
+          {
+            "destination": `${theme}.styles.json`,
+            "format": "json/flat"
+          }
+        ]
+      },
     }
-  }).buildPlatform('web');
+  }).buildAllPlatforms()
 });

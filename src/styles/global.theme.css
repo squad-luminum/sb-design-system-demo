@@ -1,4 +1,4 @@
-.theme-bluestar-light {
+.theme-global {
   --color-green-150: #114136;
   --color-green-140: #155144;
   --color-green-130: #1D725F;
@@ -43,12 +43,5 @@
   --color-blue-40: #CAE6F7;
   --color-blue-30: #DCEFFA;
   --color-blue-20: #E9F5FC;
-  --color-blue-10: #f6fbfe;
-  --color-hex-3b93ee: #3B93EE;
-  --color-hex-477fba: #477FBA;
-  --color-active-hover: var(--color-hex-3b93ee);
-  --color-active-primary: var(--color-hex-477fba);
-  --color-background: var(--color-neutral-50);
-  --color-link-primary: var(--color-active-hover);
-  --color-button-primary: var(--color-active-primary);
+  --color-blue-10: #f6fbfeff;
 }
