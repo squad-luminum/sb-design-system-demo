@@ -1,6 +1,4 @@
-import '../src/styles/luminum-light.theme.css';
-import '../src/styles/luminum-dark.theme.css';
-import '../src/styles/bluestar-light.theme.css';
+import '../src/styles/root.css';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -22,7 +20,7 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <div class="theme-luminum-light">
+    <div class="root theme-luminum-light">
         <Story />
     </div>
   )

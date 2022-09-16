@@ -1,0 +1,13 @@
+@import url('./luminum-light.theme.css');
+@import url('./luminum-dark.theme.css');
+@import url('./bluestar-light.theme.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.root {
+    font-family: 'Inter', sans-serif;
+}
