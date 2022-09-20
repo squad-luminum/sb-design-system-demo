@@ -1,4 +1,19 @@
 .theme-global {
+  --color-red-150: #770000;
+  --color-red-140: #950E10;
+  --color-red-130: #A81012;
+  --color-red-120: #C11215;
+  --color-red-110: #CD1316;
+  --color-red-100: #E01518;
+  --color-red-90: #EA1F22;
+  --color-red-80: #EC2E30;
+  --color-red-70: #EE4447;
+  --color-red-60: #EF575A;
+  --color-red-50: #F37C7E;
+  --color-red-40: #F6A2A3;
+  --color-red-30: #FAC7C8;
+  --color-red-20: #FDECED;
+  --color-red-10: #FEF6F6;
   --color-green-150: #114136;
   --color-green-140: #155144;
   --color-green-130: #1D725F;
