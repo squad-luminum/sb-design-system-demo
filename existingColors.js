@@ -14,6 +14,21 @@ const newColors = {
     "color-blue-130": "#116392",
     "color-blue-140": "#0D4A6E",
     "color-blue-150": "#0B3E5B",
+    "color-green-10": "#EFFBF8",
+    "color-green-20": "#DFF7F1",
+    "color-green-30": "#CEF2EB",
+    "color-green-40": "#AEEADE",
+    "color-green-50": "#8DE2CF",
+    "color-green-60": "#6DD9C2",
+    "color-green-70": "#4DD1B4",
+    "color-green-80": "#3FC5A8",
+    "color-green-90": "#30B99B",
+    "color-green-100": "#2AA288",
+    "color-green-110": "#26927A",
+    "color-green-120": "#21826D",
+    "color-green-130": "#1D725F",
+    "color-green-140": "#155144",
+    "color-green-150": "#114136",
     "color-neutral-10": "#FCFDFE",
     "color-neutral-20": "#F7F9FC",
     "color-neutral-30": "#F1F5F9",
@@ -29,21 +44,6 @@ const newColors = {
     "color-neutral-130": "#344255",
     "color-neutral-140": "#2B384A",
     "color-neutral-150": "#1A2533",
-    "color-green-10": "#EFFBF8",
-    "color-green-20": "#DFF7F1",
-    "color-green-30": "#CEF2EB",
-    "color-green-40": "#AEEADE",
-    "color-green-50": "#8DE2CF",
-    "color-green-60": "#6DD9C2",
-    "color-green-70": "#4DD1B4",
-    "color-green-80": "#3FC5A8",
-    "color-green-90": "#30B99B",
-    "color-green-100": "#2AA288",
-    "color-green-110": "#26927A",
-    "color-green-120": "#21826D",
-    "color-green-130": "#1D725F",
-    "color-green-140": "#155144",
-    "color-green-150": "#114136"
 };
 
 const nearestColor = require('nearest-color').from(newColors);
@@ -125,8 +125,11 @@ const existingColors = [
     '#393939',
     '#687284'];
 
+    const results = {};
 existingColors.forEach(existingColor => {
     const result = nearestColor(existingColor);
-    console.log(`${existingColor}: --${result.name}`);
+    results[existingColor] = `--${result.name}`;
+    // console.log(`${existingColor}: --${result.name}`);
 });
 
+console.log(results);
