@@ -258,7 +258,7 @@
         "type": "color"
       },
       "button-primary": {
-        "value": "{color.blue.150}",
+        "value": "{color.green.110}",
         "type": "color"
       },
       "link-primary": {
