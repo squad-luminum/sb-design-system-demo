@@ -1,10 +1,10 @@
 import React from 'react';
 import './button.css';
 import styled from '@emotion/styled';
-import { ColorPrimary, ColorSecondary } from '../colors';
+import { ColorButtonPrimary, ColorLinkPrimary } from '../styles/colors';
 
 const StyledButton = styled.button<{ primary: boolean }>(prop => ({
-  backgroundColor: prop.primary ? ColorPrimary : ColorSecondary,
+  backgroundColor: prop.primary ? ColorButtonPrimary : ColorLinkPrimary,
 }));
 
 interface ButtonProps {
