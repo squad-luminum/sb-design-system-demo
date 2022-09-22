@@ -18,10 +18,15 @@ export const parameters = {
   },
 }
 
+/** @type {Array<import('@storybook/react').DecoratorFn>} */
 export const decorators = [
-  (Story) => (
-    <div class="root theme-luminum-light">
-        <Story />
-    </div>
-  )
+  (Story, context) => {
+    const isDocs = context.viewMode === 'docs';
+    const rootClass = `root${isDocs ? ' theme-luminum-light' : ''}`;
+    return (
+      <div class={rootClass}>
+          <Story />
+      </div>
+    );
+  }
 ]
