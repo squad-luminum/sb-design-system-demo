@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Thu, 22 Sep 2022 19:11:55 GMT
- */
-
 export const ColorBackground = "var(--color-background)";
 export const ColorButtonPrimary = "var(--color-button-primary)";
 export const ColorLinkPrimary = "var(--color-link-primary)";

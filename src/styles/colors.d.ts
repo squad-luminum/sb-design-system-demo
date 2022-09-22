@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Thu, 22 Sep 2022 19:11:55 GMT
- */
-
 export const ColorBackground : string;
 export const ColorButtonPrimary : string;
 export const ColorLinkPrimary : string;

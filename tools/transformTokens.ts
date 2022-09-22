@@ -75,10 +75,16 @@ StyleDictionary.extend({
           // format: 'javascript/es6',
           format: 'javascript/es6WithVars',
           destination: 'colors.js',
+          options: {
+            showFileHeader: false,
+          },
         },
         {
           format: 'typescript/es6-declarations',
           destination: 'colors.d.ts',
+          options: {
+            showFileHeader: false,
+          },
         }
       ],
     }
