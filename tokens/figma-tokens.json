@@ -274,7 +274,7 @@
         "type": "color"
       },
       "button-primary": {
-        "value": "{color.green.130}",
+        "value": "{color.green.120}",
         "type": "color"
       },
       "link-primary": {
