@@ -925,27 +925,29 @@
         "type": "typography"
       }
     },
-    "pressed": {
-      "value": {
-        "color": "#00000040",
-        "type": "innerShadow",
-        "x": "0",
-        "y": "1",
-        "blur": "2",
-        "spread": "0"
+    "shadows": {
+      "pressed": {
+        "value": {
+          "x": "0",
+          "y": "1",
+          "blur": "2",
+          "spread": "0",
+          "color": "{colors.containers.level-4}",
+          "type": "innerShadow"
+        },
+        "type": "boxShadow"
       },
-      "type": "boxShadow"
-    },
-    "dropdown shadow": {
-      "value": {
-        "color": "#e4eaf1",
-        "type": "dropShadow",
-        "x": "0",
-        "y": "2",
-        "blur": "0",
-        "spread": "0"
-      },
-      "type": "boxShadow"
+      "drop-shadow": {
+        "value": {
+          "x": "0",
+          "y": "2",
+          "blur": "0",
+          "spread": "0",
+          "color": "{colors.containers.level-4}",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow"
+      }
     },
     "fontFamilies": {
       "inter": {
@@ -1271,27 +1273,29 @@
         "type": "typography"
       }
     },
-    "pressed": {
-      "value": {
-        "color": "#00000040",
-        "type": "innerShadow",
-        "x": "0",
-        "y": "1",
-        "blur": "2",
-        "spread": "0"
+    "shadows": {
+      "pressed": {
+        "value": {
+          "x": "0",
+          "y": "1",
+          "blur": "2",
+          "spread": "0",
+          "color": "{colors.containers.level-4}",
+          "type": "innerShadow"
+        },
+        "type": "boxShadow"
       },
-      "type": "boxShadow"
-    },
-    "dropdown shadow": {
-      "value": {
-        "x": "0",
-        "y": "2",
-        "blur": "0",
-        "spread": "0",
-        "color": "#000",
-        "type": "dropShadow"
-      },
-      "type": "boxShadow"
+      "drop-shadow": {
+        "value": {
+          "x": "0",
+          "y": "2",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow"
+      }
     },
     "fontFamilies": {
       "inter": {
