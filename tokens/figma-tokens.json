@@ -737,6 +737,14 @@
           "value": "#2f4360",
           "type": "color",
           "description": "midnight/140"
+        },
+        "icon-subtle": {
+          "value": "{colors.base-colors.Steel.70}",
+          "type": "color"
+        },
+        "tanium-red": {
+          "value": "{colors.base-colors.Red.80}",
+          "type": "color"
         }
       },
       "interactive": {
@@ -1098,6 +1106,14 @@
       "icons": {
         "icon-default": {
           "value": "{colors.base-colors.Midnight.40}",
+          "type": "color"
+        },
+        "icon-subtle": {
+          "value": "{colors.base-colors.Midnight.140}",
+          "type": "color"
+        },
+        "tanium-red": {
+          "value": "{colors.base-colors.Red.80}",
           "type": "color"
         }
       },
