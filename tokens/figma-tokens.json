@@ -739,11 +739,15 @@
           "description": "midnight/140"
         },
         "icon-subtle": {
-          "value": "{colors.base-colors.Steel.70}",
+          "value": "{colors.base-colors.Steel.80}",
           "type": "color"
         },
         "tanium-red": {
           "value": "{colors.base-colors.Red.80}",
+          "type": "color"
+        },
+        "icon-interactive": {
+          "value": "{colors.base-colors.Blue.90}",
           "type": "color"
         }
       },
@@ -809,6 +813,24 @@
             "value": "{colors.text.inverse}",
             "type": "color"
           }
+        },
+        "forms": {
+          "input-bg": {
+            "value": "{colors.containers.level-0}",
+            "type": "color"
+          },
+          "input-border": {
+            "value": "{colors.borders.medium-01}",
+            "type": "color"
+          },
+          "input-active": {
+            "value": "{colors.interactive.primary-hover}",
+            "type": "color"
+          },
+          "input-disabled": {
+            "value": "{colors.containers.level-3}",
+            "type": "color"
+          }
         }
       },
       "containers": {
@@ -818,6 +840,14 @@
         },
         "section-bg": {
           "value": "{colors.base-colors.Steel.30}",
+          "type": "color"
+        },
+        "subsection-bg": {
+          "value": "{colors.containers.level-2}",
+          "type": "color"
+        },
+        "section-content-bg": {
+          "value": "{colors.containers.level-0}",
           "type": "color"
         },
         "level-0": {
@@ -967,6 +997,17 @@
           "type": "dropShadow"
         },
         "type": "boxShadow"
+      },
+      "focus": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "blur": "8",
+          "spread": "4",
+          "color": "#1b78b1",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow"
       }
     },
     "fontFamilies": {
@@ -1070,11 +1111,11 @@
     "colors": {
       "text": {
         "primary": {
-          "value": "{colors.base-colors.Steel.40}",
+          "value": "{colors.base-colors.Steel.20}",
           "type": "color"
         },
         "secondary": {
-          "value": "{colors.base-colors.Steel.60}",
+          "value": "{colors.base-colors.Steel.40}",
           "type": "color"
         },
         "tanium-red": {
@@ -1114,6 +1155,10 @@
         },
         "tanium-red": {
           "value": "{colors.base-colors.Red.80}",
+          "type": "color"
+        },
+        "icon-interactive": {
+          "value": "{colors.base-colors.Blue.110}",
           "type": "color"
         }
       },
@@ -1179,6 +1224,24 @@
         "disabled-02": {
           "value": "{colors.base-colors.Steel.120}",
           "type": "color"
+        },
+        "forms": {
+          "input-bg": {
+            "value": "{colors.containers.level-0}",
+            "type": "color"
+          },
+          "input-border": {
+            "value": "{colors.containers.level-0}",
+            "type": "color"
+          },
+          "input-active": {
+            "value": "{colors.interactive.primary-hover}",
+            "type": "color"
+          },
+          "input-disabled": {
+            "value": "{colors.base-colors.Steel.120}",
+            "type": "color"
+          }
         }
       },
       "containers": {
@@ -1188,6 +1251,14 @@
         },
         "section-bg": {
           "value": "{colors.containers.level-3}",
+          "type": "color"
+        },
+        "subsection-bg": {
+          "value": "{colors.containers.level-2}",
+          "type": "color"
+        },
+        "section-content-bg": {
+          "value": "{colors.containers.level-0}",
           "type": "color"
         },
         "level-0": {
@@ -1328,6 +1399,17 @@
           "blur": "0",
           "spread": "0",
           "color": "#000000",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow"
+      },
+      "focus": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "blur": "8",
+          "spread": "4",
+          "color": "#116392",
           "type": "dropShadow"
         },
         "type": "boxShadow"
