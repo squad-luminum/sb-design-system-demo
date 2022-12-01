@@ -838,15 +838,19 @@
           "value": "{colors.base-colors.Steel.10}",
           "type": "color"
         },
-        "section-bg": {
-          "value": "{colors.base-colors.Steel.30}",
-          "type": "color"
-        },
         "subsection-bg": {
           "value": "{colors.containers.level-2}",
           "type": "color"
         },
-        "section-content-bg": {
+        "section-bg": {
+          "value": "{colors.base-colors.Steel.30}",
+          "type": "color"
+        },
+        "well-bg": {
+          "value": "{colors.base-colors.Steel.30}",
+          "type": "color"
+        },
+        "tile-bg": {
           "value": "{colors.containers.level-0}",
           "type": "color"
         },
@@ -881,6 +885,10 @@
         },
         "level-6": {
           "value": "#c4cedb",
+          "type": "color"
+        },
+        "table-header-bg": {
+          "value": "{colors.base-colors.Blue.20}",
           "type": "color"
         }
       },
@@ -1253,11 +1261,15 @@
           "value": "{colors.containers.level-3}",
           "type": "color"
         },
+        "well-bg": {
+          "value": "{colors.containers.level-3}",
+          "type": "color"
+        },
         "subsection-bg": {
           "value": "{colors.containers.level-2}",
           "type": "color"
         },
-        "section-content-bg": {
+        "tile-bg": {
           "value": "{colors.containers.level-0}",
           "type": "color"
         },
@@ -1287,6 +1299,10 @@
         },
         "level-6": {
           "value": "{colors.base-colors.Midnight.150}",
+          "type": "color"
+        },
+        "table-header-bg": {
+          "value": "{colors.containers.level-5}",
           "type": "color"
         }
       },
